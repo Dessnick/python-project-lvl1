@@ -9,5 +9,5 @@ before_install:
 #install:
 #  - make configure
 
-#script:
-#  - make check
+script:
+  - make check
