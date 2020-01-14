@@ -9,13 +9,13 @@ test:
 lint:
 	@poetry run flake8
 
-selfcheck:
-	@poetry check
+# selfcheck:
+# 	@poetry check
 
-check: selfcheck test lint
+# check: selfcheck test lint
 
-build: check
-	@poetry build
+# build: check
+# 	@poetry build
 
 # install: build
 # 	@pip install --user dist/hexlet_python_package*.whl
