@@ -1,4 +1,4 @@
-from brain_games.cli import run
+# from brain_games.cli import run
 
 
 def main():
@@ -7,4 +7,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    run()

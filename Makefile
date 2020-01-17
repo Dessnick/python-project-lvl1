@@ -14,10 +14,10 @@ lint:
 
 # check: selfcheck test lint
 
-# build: check
-# 	@poetry build
+build: check
+	@poetry build
 
-# install: build
-# 	@pip install --user dist/hexlet_python_package*.whl
+install: build
+	@pip install --user dist/brain_games*.whl
 
 # .PHONY: all configure test lint selfcheck check build install
