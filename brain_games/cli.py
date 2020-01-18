@@ -12,6 +12,10 @@ def ask_is_even(number):
     return number
 
 
-def answer_is_even():
+def ask_calc(number1, oper, number2):
+    print('Question: {} {} {}'. format(str(number1), str(oper), str(number2)))
+
+
+def user_answer():
     answer = prompt.string('Your answer: ')
     return answer

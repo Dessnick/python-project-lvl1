@@ -1,6 +1,6 @@
 from random import randint
 from brain_games.cli import ask_is_even
-from brain_games.cli import answer_is_even
+from brain_games.cli import user_answer
 
 
 def is_even(number):
@@ -27,7 +27,7 @@ def game_even(name):
     counter = 0
     while counter < 3:
         number = ask_is_even(randint(1, 100))
-        answer = answer_is_even()
+        answer = user_answer()
         if correct_answer(answer, number, name):
             counter = counter + 1
         else:
