@@ -16,6 +16,10 @@ def ask_calc(number1, oper, number2):
     print('Question: {} {} {}'. format(str(number1), str(oper), str(number2)))
 
 
+def ask_gcd(number1, number2):
+    print('Question: {} {}'. format(str(number1), str(number2)))
+
+
 def user_answer():
     answer = prompt.string('Your answer: ')
     return answer
