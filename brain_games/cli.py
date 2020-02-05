@@ -23,3 +23,10 @@ def ask_gcd(number1, number2):
 def user_answer():
     answer = prompt.string('Your answer: ')
     return answer
+
+
+def wrong_answer(name, answer, correct_answer):
+    print("'{}'". format(str(answer)) +
+          " is wrong answer ;(. "
+          "Correct answer was " + "'{}'". format(correct_answer) + ".")
+    print("Let's try again, {}!". format(name))
