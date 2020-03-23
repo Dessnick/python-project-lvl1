@@ -1,6 +1,14 @@
 import prompt
 
 
+# def welcome_user():
+#     print('Welcome to the Brain Games!')
+#     print('')
+#     name = prompt.string('May I have your name? ')
+#     print('Hello, {}!'. format(name))
+#     return name
+
+
 def run():
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'. format(name))
@@ -18,6 +26,13 @@ def ask_calc(number1, oper, number2):
 
 def ask_gcd(number1, number2):
     print('Question: {} {}'. format(str(number1), str(number2)))
+
+
+def ask_prog(array):
+    array_str = ''
+    for x in array:
+        array_str += str(x) + ' '
+    print('Question: {}'. format(array_str))
 
 
 def user_answer():
