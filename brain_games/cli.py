@@ -15,7 +15,7 @@ def run():
     return name
 
 
-def ask_is_even(number):
+def ask_num(number):
     print('Question: {}'. format(str(number)))
     return number
 
