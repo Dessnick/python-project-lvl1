@@ -1,6 +1,6 @@
 import brain_games.scripts.brain_games
 from brain_games.cli import run
-from brain_games.games.gcd import game_gcd
+from brain_games.driver import start
 
 
 def main():
@@ -9,7 +9,7 @@ def main():
     print('')
     name = run()
     print('')
-    game_gcd(name)
+    start(name, 'gcd')
 
 
 if __name__ == '__main__':

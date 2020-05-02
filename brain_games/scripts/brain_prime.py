@@ -1,6 +1,6 @@
 import brain_games.scripts.brain_games
 from brain_games.cli import run
-from brain_games.games.prime import game_prime
+from brain_games.driver import start
 
 
 def main():
@@ -9,7 +9,7 @@ def main():
     print('')
     name = run()
     print('')
-    game_prime(name)
+    start(name, 'prime')
 
 
 if __name__ == '__main__':
