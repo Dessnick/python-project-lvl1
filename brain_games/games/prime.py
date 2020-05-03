@@ -1,9 +1,7 @@
 def is_prime(number):
-    if number == 1:
-        return 'no'
-    elif number == 2 or number == 3:
+    if number == 2 or number == 3:
         return 'yes'
-    if (number % 2 == 0 or number % 3 == 0):
+    if (number % 2 == 0 or number % 3 == 0 or number == 1):
         return 'no'
     i = 5
     while(i * i <= number):
