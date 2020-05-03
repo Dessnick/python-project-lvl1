@@ -1,9 +1,7 @@
 def is_prime(number):
     if number == 1:
         return 'no'
-    if number == 2:
-        return 'yes'
-    if number == 3:
+    elif number == 2 or number == 3:
         return 'yes'
     if (number % 2 == 0 or number % 3 == 0):
         return 'no'

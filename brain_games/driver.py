@@ -11,7 +11,7 @@ from brain_games.games.gcd import gcd_result
 from brain_games.games.progression import game_progression
 
 
-def RepresentsInt(string):
+def is_integer(string):
     try:
         int(string)
         return True
@@ -23,10 +23,9 @@ def start(name, game):
     counter = 0
     while counter < 3:
         result = run_game(game)
-        if RepresentsInt(result):
-            answer = int(user_answer())
-        else:
-            answer = user_answer()
+        answer = user_answer()
+        if is_integer(result):
+            answer = int(answer)
 
         if answer == result:
             print('Correct!')
