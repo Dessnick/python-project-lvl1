@@ -11,22 +11,18 @@ from brain_games.games.gcd import gcd_result
 from brain_games.games.progression import game_progression
 
 
-def is_integer(string):
+def represent_answer(string):
     try:
-        int(string)
-        return True
+        return int(string)
     except ValueError:
-        return False
+        return string
 
 
 def start(name, game):
     counter = 0
     while counter < 3:
         result = run_game(game)
-        answer = user_answer()
-        if is_integer(result):
-            answer = int(answer)
-
+        answer = represent_answer(user_answer())
         if answer == result:
             print('Correct!')
             counter = counter + 1
