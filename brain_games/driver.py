@@ -36,6 +36,7 @@ def start(name, game):
 def run_game(game):
     number1 = randint(1, 100)
     number2 = randint(1, 100)
+    result = 0
     if game == 'calc':
         oper = choice('-+*')
         ask_calc(number1, oper, number2)
@@ -47,8 +48,8 @@ def run_game(game):
         ask_gcd(number1, number2)
         result = gcd_result(number1, number2)
     elif game == 'prime':
-        number = ask_num(randint(1, 100))
-        result = is_prime(number)
+        ask_num(1)
+        result = is_prime(1)
     elif game == 'progression':
         number1 = randint(1, 10)
         number2 = randint(1, 10)
