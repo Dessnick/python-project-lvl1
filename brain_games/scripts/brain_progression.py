@@ -1,14 +1,10 @@
 import brain_games.scripts.brain_games
-from brain_games.cli import run
 from brain_games.driver import start
 
 
 def main():
-    brain_games.scripts.brain_games.main()
-    print('What number is missing in the progression?')
-    print('')
-    name = run()
-    print('')
+    greeting_prog = 'What number is missing in the progression?'
+    name = brain_games.scripts.brain_games.main(greeting_prog)
     start(name, 'progression')
 
 

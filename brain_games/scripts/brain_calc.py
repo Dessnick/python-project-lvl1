@@ -1,14 +1,10 @@
 import brain_games.scripts.brain_games
-from brain_games.cli import run
 from brain_games.driver import start
 
 
 def main():
-    brain_games.scripts.brain_games.main()
-    print('What is the result of the expression?')
-    print('')
-    name = run()
-    print('')
+    greeting_calc = 'What is the result of the expression?'
+    name = brain_games.scripts.brain_games.main(greeting_calc)
     start(name, 'calc')
 
 
