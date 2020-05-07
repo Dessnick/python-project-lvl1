@@ -1,17 +1,9 @@
-import brain_games.scripts.brain_games
-# from brain_games.driver import start
-
-
-def greet_and_play_gcd():
-    greeting_gcd = 'Find the greatest common divisor of given numbers.'
-    brain_games.scripts.brain_games.main(greeting_gcd, 'gcd')
+from brain_games.scripts.brain_games import greet_and_start
 
 
 def main():
-    greet_and_play_gcd()
-    # greeting_gcd = 'Find the greatest common divisor of given numbers.'
-    # name = brain_games.scripts.brain_games.main(greeting_gcd)
-    # start(name, 'even')
+    greeting_gcd = 'Find the greatest common divisor of given numbers.'
+    greet_and_start(greeting_gcd, 'gcd')
 
 
 if __name__ == '__main__':

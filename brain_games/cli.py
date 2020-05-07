@@ -3,7 +3,8 @@ import prompt
 
 def welcome_user(greeting_game):
     print('Welcome to the Brain Games!')
-    print(greeting_game)
+    if greeting_game != '':
+        print(greeting_game)
     print('')
     name = prompt.string('May I have your name? ')
     print('Hello, {}!'. format(name))

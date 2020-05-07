@@ -1,17 +1,9 @@
-import brain_games.scripts.brain_games
-# from brain_games.driver import start
-
-
-def greet_and_play_calc():
-    greeting_calc = 'What is the result of the expression?'
-    brain_games.scripts.brain_games.main(greeting_calc, 'calc')
+from brain_games.scripts.brain_games import greet_and_start
 
 
 def main():
-    # greeting_calc = 'What is the result of the expression?'
-    # name = brain_games.scripts.brain_games.main(greeting_calc)
-    # start(name, 'calc')
-    greet_and_play_calc()
+    greeting_calc = 'What is the result of the expression?'
+    greet_and_start(greeting_calc, 'calc')
 
 
 if __name__ == '__main__':

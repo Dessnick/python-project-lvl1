@@ -1,17 +1,9 @@
-import brain_games.scripts.brain_games
-# from brain_games.driver import start
-
-
-def greet_and_play_even():
-    greeting_even = 'Find the greatest common divisor of given numbers.'
-    brain_games.scripts.brain_games.main(greeting_even, 'even')
+from brain_games.scripts.brain_games import greet_and_start
 
 
 def main():
-    greet_and_play_even()
-    # greeting_even = 'Answer "yes" if number even otherwise answer "no".'
-    # name = brain_games.scripts.brain_games.main(greeting_even)
-    # start(name, 'even')
+    greeting_even = 'Find the greatest common divisor of given numbers.'
+    greet_and_start(greeting_even, 'even')
 
 
 if __name__ == '__main__':
