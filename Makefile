@@ -1,23 +1,18 @@
-all: install
-
-configure:
+install:
 	@poetry install
 
-test:
-	@poetry run pytest
+# test:
+# 	poetry run pytest hexlet_python_package tests
 
 lint:
-	@poetry run flake8
+	poetry run flake8
 
-# selfcheck:
-# 	@poetry check
+selfcheck:
+	poetry check
 
-# check: selfcheck test lint
+check: selfcheck test lint
 
 build: check
 	@poetry build
 
-install: build
-	@pip install --user dist/brain_games*.whl
-
-# .PHONY: all configure test lint selfcheck check build install
+.PHONY: install test lint selfcheck check build
