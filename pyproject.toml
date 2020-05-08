@@ -1,11 +1,16 @@
 [tool.poetry]
 name = "dessnick_brain_games"
 version = "0.8.0"
-description = ""
+description = "Package of Brain Games for Hexlet"
 authors = ["Dessnick <dessnick@gmail.com>"]
 packages = [
     { include = "brain_games" },
   ]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+repository = [https://github.com/Dessnick/python-project-lvl1]
 
 [tool.poetry.dependencies]
 python = "^3.6"
