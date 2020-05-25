@@ -1,9 +1,8 @@
-from brain_games.scripts.brain_games import greet_and_start
+from brain_games import games, engine
 
 
 def main():
-    greeting_gcd = 'Find the greatest common divisor of given numbers.'
-    greet_and_start(greeting_gcd, 'gcd')
+    engine.run(games.gcd)
 
 
 if __name__ == '__main__':

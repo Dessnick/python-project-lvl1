@@ -1,9 +1,8 @@
-from brain_games.scripts.brain_games import greet_and_start
+from brain_games import games, engine
 
 
 def main():
-    greeting_prog = 'What number is missing in the progression?'
-    greet_and_start(greeting_prog, 'progression')
+    engine.run(games.progression)
 
 
 if __name__ == '__main__':

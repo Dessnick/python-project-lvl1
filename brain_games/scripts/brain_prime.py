@@ -1,10 +1,8 @@
-from brain_games.scripts.brain_games import greet_and_start
+from brain_games import games, engine
 
 
 def main():
-    greeting_prime = ('Answer "yes" if given number is prime. '
-                      'Otherwise answer "no"')
-    greet_and_start(greeting_prime, 'prime')
+    engine.run(games.prime)
 
 
 if __name__ == '__main__':
