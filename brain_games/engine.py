@@ -5,8 +5,9 @@ def run(game):
     name = welcome_user(game.GAME_RULES)
     counter = 0
     while counter < 3:
-        question, correct_answer = game.start()
-        ask_user(question)
+        result = game.start()
+        correct_answer = result[1]
+        ask_user(result[0])
         answer = user_answer()
         if correct_answer == answer:
             print('Correct!')

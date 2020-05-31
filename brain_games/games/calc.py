@@ -11,4 +11,4 @@ def start():
     rand_calc = choice(OPERATOR_FUNCTION_TUPLE)
     question = 'Question: {} {} {}'. format(number1, rand_calc[0], number2)
     result = rand_calc[1](number1, number2)
-    return question, str(result)
+    return (question, str(result))
