@@ -15,13 +15,6 @@ def ask_user(string):
     print('Question: {}'. format(string))
 
 
-def ask_prog(array):
-    array_str = ''
-    for x in array:
-        array_str += str(x) + ' '
-    print('Question: {}'. format(array_str))
-
-
 def user_answer():
     answer = prompt.string('Your answer: ')
     return answer
