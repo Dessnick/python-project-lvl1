@@ -1,6 +1,17 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/fb01eab326efddbb0c98/maintainability)](https://codeclimate.com/github/Dessnick/python-project-lvl1/maintainability) 
 [![Build Status](https://travis-ci.com/Dessnick/python-project-lvl1.svg?branch=master)](https://travis-ci.com/Dessnick/python-project-lvl1)
-It's time to play Brain Games!
+
+# It's time to play Brain Games!
+
+## How to install
+
+Python 3 must be already installed.
+
+From test.pypi.org run command:
+
+```bash
+python3 -m pip install --no-cache-dir --index-url https://test.pypi.org/simple --extra-index-url https://pypi.org/simple dessnick_brain_games
+```
 
 1. Type "brain-calc" after install. 
 What is the result of the expression?
