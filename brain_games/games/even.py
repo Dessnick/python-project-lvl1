@@ -1,12 +1,10 @@
-from random import randint
+import random
+
 GAME_RULES = 'Answer "yes" if number even otherwise answer "no".'
+MAX_NUMBER = 100
 
 
 def start():
-    number = randint(1, 100)
+    number = random.randint(1, MAX_NUMBER)
     question = 'Question: {}'. format(number)
-    if number % 2 == 0:
-        result = 'yes'
-    else:
-        result = 'no'
-    return (question, result)
+    return question, 'yes' if number % 2 == 0 else 'no'
